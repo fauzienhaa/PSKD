@@ -1,0 +1,182 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+.openSans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.staat {
+    font-family: 'Staatliches', cursive;
+}
+
+.wrap {
+    background-image: url('assets/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay-item {
+    background-color: rgba(20, 20, 20, 0.6);
+}
+
+.warna-item {
+    background-color: #1414143d;
+}
+
+.warna-putih {
+    background-color: #FFFFFF;
+}
+
+.jarak-atas {
+    padding-top: 75px;
+}
+
+.jarak-bawah {
+    padding-bottom: 75px;
+}
+
+.jarak {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #000000;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 18px;
+    font-size: 18px;
+    /* Increase font size */
+    box-shadow: 0 0 5px 0.5px #000000;
+}
+
+#myBtn:hover {
+    transition: 0.75s;
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+.nav-link:hover {
+    transition: 0.5s;
+}
+
+.btn-outline-light:hover {
+    transition: 1s;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+/* medium and up screens */
+
+@media (min-width: 768px) {
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+    transform: translateX(0);
+}
+
+.putih {
+    background-color: white;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    #quote {
+        margin-top: -120px;
+        margin-left: 75px;
+    }
+    #quote2 {
+        margin-left: 75px;
+    }
+    .quote1 {
+        font-size: 75px;
+    }
+    .quote2 {
+        font-size: 30px;
+    }
+    .jumbo {
+        font-size: 81px;
+    }
+    .saran {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quote1 {
+        font-size: 30px;
+    }
+    .quote2 {
+        font-size: 20px;
+    }
+    .jumbo {
+        font-size: 40px;
+    }
+    .saran {
+        margin-top: 50px;
+    }
+    .tiles-atas {
+        padding-top: 20px;
+    }
+    .tiles-bawah {
+        padding-bottom: 20px;
+    }
+}
